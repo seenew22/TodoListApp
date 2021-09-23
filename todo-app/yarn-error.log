@@ -1,0 +1,36 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\shinyoo_kim\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add node-sass clasnames react-icons
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\shinyoo_kim\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Microsoft\Web Platform Installer;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files\nodejs;C:\Program Files (x86)\PuTTY;C:\Program Files\Git\cmd;C:\Users\shinyoo_kim\.windows-build-tools\python27;C:\Users\shinyoo_kim\AppData\Local\Microsoft\WindowsApps;C:\Users\shinyoo_kim\AppData\Roaming\npm;C:\Program Files\Bandizip;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Users\shinyoo_kim\AppData\Local\Programs\Microsoft VS Code\bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  10.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: http://npm.tmax-work.shop:4873/clasnames: no such package available
+      at Request.params.callback [as _callback] (C:\Users\shinyoo_kim\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
+      at Request.self.callback (C:\Users\shinyoo_kim\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (C:\Users\shinyoo_kim\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141634:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (C:\Users\shinyoo_kim\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141556:12)
+      at Object.onceWrapper (events.js:286:20)
+      at IncomingMessage.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1129:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
