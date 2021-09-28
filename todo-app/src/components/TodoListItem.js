@@ -3,15 +3,15 @@ import { MdCheckBoxOutlineBlank, MdCheckBox, MdRemoveCircleOutline } from 'react
 import './TodoListItem.scss';
 import cx from 'classnames';
 
-const TodoListItem = ({todo}) => {
-    const {text, checked} = todo;
+const TodoListItem = ({todo, onRemove, onToggle}) => {
+    const {id, text, checked} = todo;
     return (
         <div className="TodoListItem">
-            <div className={cx("checkbox", {checked})}>
+            <div className={cx("checkbox", {checked})} onClick={() => onToggle(id)}>
                 {checked ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
                 <div className="text">{text}</div>
             </div>
-            <div className="remove">
+            <div className="remove" onClick={() => onRemove(id)}>
                 <MdRemoveCircleOutline />
             </div>
         </div>

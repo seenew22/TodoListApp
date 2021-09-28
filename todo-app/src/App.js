@@ -37,11 +37,25 @@ function App() {
       nextId.current += 1; // nextId 1씩 더하기
   },[todos]);
 
+  // todos 배열에서 id로 항목을 삭제하는 함수
+  const onRemove = useCallback( id => {
+    setTodos(todos.filter(todo => todo.id !== id));
+  },[todos]);
+
+  // 토글 함수
+  const onToggle = useCallback(id => {
+    setTodos(
+      todos.map(todo =>
+        todo.id === id ? {...todo, checked: !todo.checked} : todo,
+        )
+    );
+  },[todos]);
+
 
   return (
     <TodoTemplate>
       <TodoInsert onInsert={onInsert} />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} onRemove={onRemove} onToggle={onToggle} />
     </TodoTemplate>
   );
 }
